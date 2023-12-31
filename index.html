@@ -38,13 +38,13 @@
 
     <main>
     <!--theBootBarn title-->
-    <div class="title border border-primary">
+    <div class="title border border-primary d-flex flex-column align-items-center justify-content-between">
         <h1 class="main-header">theBootBarn</h1>
         <p class="tag">where soles find homes, and comfort finds you</p>
     </div>
 
     <!--Mission Statement-->
-    <div class="mission-statement border border-secondary">
+    <div class="mission-statement border border-secondary d-flex flex-column align-items-center justify-content-between">
         <h2 class="our-mission">~our mission~</h2>
         <p class="mission-statement">At theBootBarn, our mission is to curate an expansive collection of footwear that embodies quality, style, and versatility, ensuring that every style and design is available for both men and women. We aim to be the ultimate destination for footwear enthusiasts, offering an extensive array of boots, shoes, and accessories that cater to every lifestyle, purpose, and fashion preference regardless of gender.</br></br>
             
@@ -62,77 +62,146 @@
 
     <!--Featured Boots-->
     <div class="index-boots border border-success">
-        <h2 class="our-boots">Our Boots</h2>
 
-        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-              <div class="carousel-item active">
+        <div class="d-flex flex-column align-items-center justify-content-between">
+            <h2 class="our-boots">Our Boots</h2>
 
-                <div class="cards-wrapper d-flex">
-                    <div class="card" style="width: 18rem;">
-                        <img src="..." class="card-img-top" alt="...">
-                        <div class="card-body">
-                          <h5 class="card-title">Card title</h5>
-                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                          <a href="#" class="btn btn-primary">Go somewhere</a>
+            <div id="carouselBootControls" class="carousel slide">
+                <div class="carousel-inner">
+
+                    <div class="carousel-item active">
+
+                        <div class="cards-wrapper d-flex">
+                            <div class="card" style="width: 18rem;">
+                                <img src="..." class="card-img-top" alt="...">
+                                <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                                </div>
+                            </div>
+
+                            <div class="card" style="width: 18rem;">
+                                <img src="..." class="card-img-top" alt="...">
+                                <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                                </div>
+                            </div>
                         </div>
+                        
                     </div>
-
-                    <div class="card" style="width: 18rem;">
-                        <img src="..." class="card-img-top" alt="...">
-                        <div class="card-body">
-                          <h5 class="card-title">Card title</h5>
-                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                          <a href="#" class="btn btn-primary">Go somewhere</a>
-                        </div>
-                    </div>
-                </div>
                 
-            </div>
-              
-            <div class="carousel-item">
-                
-                <div class="cards-wrapper d-flex">
-                    <div class="card" style="width: 18rem;">
-                        <img src="..." class="card-img-top" alt="...">
-                        <div class="card-body">
-                          <h5 class="card-title">Card title</h5>
-                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                          <a href="#" class="btn btn-primary">Go somewhere</a>
+                    <div class="carousel-item">
+                    
+                        <div class="cards-wrapper d-flex">
+                            <div class="card" style="width: 18rem;">
+                                <img src="..." class="card-img-top" alt="...">
+                                <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                                </div>
+                            </div>
+
+                            <div class="card" style="width: 18rem;">
+                                <img src="..." class="card-img-top" alt="...">
+                                <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                                </div>
+                            </div>
                         </div>
+
                     </div>
 
-                    <div class="card" style="width: 18rem;">
-                        <img src="..." class="card-img-top" alt="...">
-                        <div class="card-body">
-                          <h5 class="card-title">Card title</h5>
-                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                          <a href="#" class="btn btn-primary">Go somewhere</a>
-                        </div>
-                    </div>
+                    <button class="carousel-control-prev btn btn-primary" type="button" data-bs-target="#carouselBootControls" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next btn btn-primary" type="button" data-bs-target="#carouselBootControls" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                    </button>
                 </div>
-
             </div>
-
-            <button class="carousel-control-prev btn btn-primary" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next btn btn-primary" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
         </div>
     </div>
 
     <!--Featured Shoes-->
-    <div class="index-shoes border border-danger">
-        <h2 class="our-shoes">Our Shoes</h2>
+    <div class="index-shoes border border-success">
 
+        <div class="d-flex flex-column align-items-center justify-content-between">
+            <h2 class="our-shoes">Our Shoes</h2>
+
+            <div id="carouselShoeControls" class="carousel slide">
+                <div class="carousel-inner">
+
+                    <div class="carousel-item active">
+
+                        <div class="cards-wrapper d-flex">
+                            <div class="card" style="width: 18rem;">
+                                <img src="..." class="card-img-top" alt="...">
+                                <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                                </div>
+                            </div>
+
+                            <div class="card" style="width: 18rem;">
+                                <img src="..." class="card-img-top" alt="...">
+                                <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                
+                    <div class="carousel-item">
+                    
+                        <div class="cards-wrapper d-flex">
+                            <div class="card" style="width: 18rem;">
+                                <img src="..." class="card-img-top" alt="...">
+                                <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                                </div>
+                            </div>
+
+                            <div class="card" style="width: 18rem;">
+                                <img src="..." class="card-img-top" alt="...">
+                                <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <button class="carousel-control-prev btn btn-primary" type="button" data-bs-target="#carouselShoeControls" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next btn btn-primary" type="button" data-bs-target="#carouselShoeControls" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </div>
     </div>
 
     <!--Testimonials-->
-    <div class="testimonials border border-warning">
+    <div class="testimonials border border-warning d-flex flex-column align-items-center justify-content-between">
         <h2 class="testimonials-title">Testimonials</h2>
 
         <div class="accordion" id="accordionExample">
@@ -179,15 +248,59 @@
     
 
     <!--How to Tie your Shoes-->
-    <div class="tie-shoes border border-info">
-        <h2 class="shoe-tie-title">How to Tie your new BootBarn Shoe</h2>
-
+    <div class="tie-shoes border border-info d-flex flex-column align-items-center justify-content-center">
+        <h2 class="shoe-tie-title text-center">How to Tie your </br> new BootBarn Shoe</h2>
+        <p>function tieShoes() {</br>    
+            let leftShoelace = "left lace";</br>    
+            let rightShoelace = "right lace";</br></br>    
+            for (let i = 1; i <= 5; i++) {</br>        
+                if (i === 1) {</br>            
+                console.log(`Step ${i}: Cross ${leftShoelace} over ${rightShoelace}`);</br>        
+            } else if (i === 2) {</br>
+                console.log(`Step ${i}: Loop ${rightShoelace} under and through`);</br>
+            } else if (i === 3) {</br>            
+                console.log(`Step ${i}: Create a bunny ear with ${leftShoelace}`);</br>        
+            } else if (i === 4) {</br>            
+                console.log(`Step ${i}: Wrap ${rightShoelace} around the bunny ear`);</br>        
+            } else if (i === 5) {</br>            
+                console.log(`Step ${i}: Pull both laces to tighten the knot`);</br>        
+            }</br>    
+        }</br></br>    
+        return "Shoelaces successfully tied!";</br>
+    }</br></br>
+    console.log(tieShoes());</p>
     </div>
 
     </main>
 
     <!--Footer-->
     <footer class="footer-info border border-dark">
+        
+        <div class="d-flex justify-content-between">
+            <div class="boot-barn-info">
+                <p class="boot-barn-footer">theBootBarn</p>
+                <div class="boot-barn-icons">
+                    <i class="boot-facebook bi bi-facebook"></i>
+                    <i class="boot-insta bi bi-instagram"></i>
+                    <i class="boot-twitter bi bi-twitter"></i>
+                    <i class="boot-linkedin bi bi-linkedin"></i>
+                </div>
+                <p class="boot-barn-street">1234 Boot Street</p>
+                <p class="boot-barn-town">Bootsville, Farm County</p>
+                <p class="boot-barn-state">Countryland, BL1 23T</p>
+            </div>
+
+            <div class="binary-harvest-info">
+                <p class="binary-harvest-footer">Binary Harvest Ranch</p>
+                <div class="binary-harvest-icons">
+                    <i class="binary-facebook bi bi-facebook"></i>
+                    <i class="binary-insta bi bi-instagram"></i>
+                </div>
+                <p class="binary-harvest-street">302 Harvest Ranch Road</p>
+                <p class="binary-harvest-town">Meadowville, County</p>
+                <p class="binary-harvest-state">Townsville, 01010</p>
+            </div>
+        </div>
 
     </footer>
 
