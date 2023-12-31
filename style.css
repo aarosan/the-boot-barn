@@ -1,3 +1,7 @@
 * {
     font-family: 'Josefin Slab', serif;
 }
+
+.carousel-inner {
+    display: flex;
+}
