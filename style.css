@@ -52,3 +52,8 @@ footer i {
 .boot-collection button {
     width: fit-content;
 }
+
+.animal {
+    max-width: 100%;
+}
+

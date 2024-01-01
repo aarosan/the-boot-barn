@@ -57,27 +57,31 @@
 
                 <!--Modal Body-->
                 <div class="modal-body d-flex flex-column">
-                    <i class="bi bi-person-circle"></i>  
+                    <i class="bi bi-person-circle text-center login-icon"></i>  
                     <p>Username</p>
-                    <input type="text" name="username" placeholder="Enter Username" id="">
+                    <input type="text" name="username" placeholder="Enter Username" id="" class="mb-3">
                     <p>Password</p>
-                    <input type="text" name="password" placeholder="Enter Password" id="">
-                    <button class="login">Login</button>
-                    <div class="d-flex justify-content-between">
-                        <div class="remember-me d-flex">
-                            <input type="checkbox" name="remember-me" id="">
-                            <p>Remember Me</p>
+                    <input type="text" name="password" placeholder="Enter Password" id="" class="mb-3">
+                    <div class="d-flex justify-content-center">
+                        <button class="login">Login</button>
+                    </div>
+                    
+                    <div class="d-flex justify-content-between mt-3">
+
+                        <div class="remember-me d-flex align-items-start">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="rememberMeCheckbox">
+                                <label for="rememberMeCheckbox" class="form-check-label">Remember Me</label>
+                            </div>
                         </div>
+
                         <div class="options d-flex flex-column">
                             <a href="">Create Account</a>
                             <a href="">Forgot username?</a>
                             <a href="">Forgot password?</a>
                         </div>
-                    </div>
-                </div>
 
-                <!--Modal Footer-->
-                <div class="modal-footer">
+                    </div>
                 </div>
               </div>
             </div>
@@ -86,21 +90,21 @@
         <!--Offcanvas Shopping Cart-->
         <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
             <div class="offcanvas-header">
-              <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
+              <h5 class="offcanvas-title" id="offcanvasExampleLabel">Shopping Cart</h5>
               <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
             </div>
             <div class="offcanvas-body">
               <div>
-                Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images, lists, etc.
+                Items will appear here once you add them to your cart!
               </div>
               <div class="dropdown mt-3">
                 <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
-                  Dropdown button
+                  Products Available
                 </button>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  <li><a class="dropdown-item" href="/shoes.html">Shoes</a></li>
+                  <li><a class="dropdown-item" href="/boots.html">Boots</a></li>
+                  <li><a class="dropdown-item" href="/accessories.html">Accessories</a></li>
                 </ul>
               </div>
             </div>
@@ -111,9 +115,9 @@
     <main>
 
     <!--theBoots title-->
-    <div class="title border border-primary d-flex flex-column align-items-center justify-content-between">
+    <div class="boots-title border border-primary d-flex flex-column align-items-center justify-content-between my-3 pt-3">
         <h1 class="main-header">theBoots</h1>
-        <p class="tag">At theBootBarn, our commitment extends beyond providing exceptional footwear. We've partnered with Binary Harvest Ranch 
+        <p class="tag p-3">At theBootBarn, our commitment extends beyond providing exceptional footwear. We've partnered with Binary Harvest Ranch 
             in a mission close to our 'sole.' For every pair of shoes sold, we've pledge to rescue and rehabilitate barnyard animals in need, 
             offering them a haven filled with love and care. With each purchase, you're not just stepping into style and comfort; you're also 
             extending a helping hand to our furry friends.</br></br>
@@ -125,198 +129,509 @@
     </div>
 
     <!--Entire Boot Collection-->
-    <div class="boot-collection">
+    <div class="boot-collection my-3">
 
         <!--BinaryBoots-->
-        <div class="border binary-boots d-flex flex-column align-items-center">
+        <div class="border binary-boots d-flex flex-column align-items-center p-3 my-3">
 
-            <div class="product-container d-flex">
-                <div class="boot d-flex">
-                    <img src="/Screenshot 2023-12-31 at 5.40.51 PM.png" alt="" class="custom-img"/>
-                    <div class="boot-info">
-                        <p class="boot-title">BinaryBoots</p>
-                        <p class="boot-price">$150.30</p>
-                        <p class="boot-description">
-                            Step into the future with BinaryBoots, the perfect 
-                            fusion of innovation and comfort. These cutting-edge 
-                            boots marry technology and style, ensuring unparalleled 
-                            support and trendsetting design.
-                        </p>
+            <div class="container">
+
+                <div class="product-container d-flex row">
+
+                    <div class="col-6 boot d-flex">
+
+                        <div class="image-container">
+                            <img src="Screenshot 2023-12-31 at 5.40.51 PM.png" alt="" class="m-1"/>
+                        </div>       
+
+                        <div class="boot-info m-3">
+                            <p class="boot-title">BinaryBoots</p>
+                            <p class="boot-price">$150.30</p>
+                            <p class="boot-description">
+                                Step into the future with BinaryBoots, the perfect 
+                                fusion of innovation and comfort. These cutting-edge 
+                                boots marry technology and style, ensuring unparalleled 
+                                support and trendsetting design.
+                            </p>
+                        </div>
+
                     </div>
+
+                    <div class="col-6 animal d-flex">
+
+                        <div class="image-container">
+                            <img src="/assets/buttercup.jpg" alt="" class="m-1"/>
+                        </div>
+
+                        <div class="animal-info m-3">
+                            <p class="animal-name">Buttercup</p>
+                            <p class="animal-age">2 years, 3 months</p>
+                            <p class="animal-description">
+                                Meet Buttercup, the darling of the pasture. Her warm, 
+                                brown eyes and gentle moo resonate affection and longing 
+                                for a loving home. She's an endearing soul, ready to bring 
+                                tranquility and joy to any family farm.
+                            </p>
+                        </div>
+                        
+                    </div>
+                    
                 </div>
 
-                <div class="animal d-flex">
-                    <div class="image-container">
-                        <img src="/assets/buttercup.jpg" alt="" class=""/>
-                    </div>
-                    <div class="animal-info">
-                        <p class="animal-name">Buttercup</p>
-                        <p class="animal-age">2 years, 3 months</p>
-                        <p class="animal-description">
-                            Meet Buttercup, the darling of the pasture. Her warm, 
-                            brown eyes and gentle moo resonate affection and longing 
-                            for a loving home. She's an endearing soul, ready to bring 
-                            tranquility and joy to any family farm.
-                        </p>
-                    </div>
-                </div>
             </div>
 
-            <button>Select Boot</button>
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#selectBoot">
+                Select Boot
+            </button>
 
         </div>
        
         <!--NanoBoots-->
-        <div class="border nano-boots d-flex flex-column align-items-center">
+        <div class="border nano-boots d-flex flex-column align-items-center p-3 my-3">
 
-            <div class="product-container d-flex">
-                <div class="boot d-flex">
-                    <img src="/Screenshot 2023-12-31 at 5.40.51 PM.png" alt="" class="custom-img"/>
-                    <div class="boot-info">
-                        <p class="boot-title">NanoBoots</p>
-                        <p class="boot-price">$80.80</p>
-                        <p class="boot-description">
-                            Compact yet powerful, these shoes boast advanced technology in 
-                            a sleek design, offering unparalleled agility and comfort.
-                        </p>
+            <div class="container">
+
+                <div class="product-container d-flex row">
+
+                    <div class="col-6 boot d-flex">
+
+                        <div class="image-container">
+                            <img src="Screenshot 2023-12-31 at 5.40.51 PM.png" alt="" class="m-1"/>
+                        </div>
+
+                        <div class="boot-info m-3">
+                            <p class="boot-title">NanoBoots</p>
+                            <p class="boot-price">$80.80</p>
+                            <p class="boot-description">
+                                Compact yet powerful, these shoes boast advanced technology in 
+                                a sleek design, offering unparalleled agility and comfort.
+                            </p>
+                        </div>
+
                     </div>
+
+                    <div class="col-6 animal d-flex">
+
+                        <div class="image-container">
+                            <img src="/assets/penelope.jpg" alt="" class="m-1"/>
+                        </div>
+
+                        <div class="animal-info m-3">
+                            <p class="animal-name">Penelope</p>
+                            <p class="animal-age">1 year, 1 month</p>
+                            <p class="animal-description">
+                                Penelope is an affectionate pig with a heart of gold. 
+                                Her gentle snorts and friendly nature make her the perfect 
+                                addition to any family seeking a cuddly and endearing companion.
+                            </p>
+                        </div>
+
+                    </div>
+
                 </div>
 
-                <div class="animal d-flex">
-                    <div class="image-container">
-                        <img src="/assets/penelope.jpg" alt="" class=""/>
-                    </div>
-                    <div class="animal-info">
-                        <p class="animal-name">Penelope</p>
-                        <p class="animal-age">1 year, 1 month</p>
-                        <p class="animal-description">
-                            Penelope is an affectionate pig with a heart of gold. 
-                            Her gentle snorts and friendly nature make her the perfect 
-                            addition to any family seeking a cuddly and endearing companion.
-                        </p>
-                    </div>
-                </div>
             </div>
-
-            <button>Select Boot</button>
+            
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#selectBoot">
+                Select Boot
+            </button>
             
         </div>
 
         <!--CircuitBoots-->
-        <div class="border circuit-boots d-flex flex-column align-items-center">
+        <div class="border circuit-boots d-flex flex-column align-items-center p-3 my-3">
 
-            <div class="product-container d-flex">
-                <div class="boot d-flex">
-                    <img src="/Screenshot 2023-12-31 at 5.40.51 PM.png" alt="" class="custom-img"/>
-                    <div class="boot-info">
-                        <p class="boot-title">CircuitBoots</p>
-                        <p class="boot-price">$150.30</p>
-                        <p class="boot-description">
-                            CircuitBoots fuse cutting-edge innovation with rugged durability, 
-                            ensuring a seamless blend of style and functionality for the tech-savvy 
-                            adventurer.
-                        </p>
+            <div class="container">
+
+                <div class="product-container d-flex row">
+
+                    <div class="col-6 boot d-flex">
+
+                        <div class="image-container">
+                            <img src="Screenshot 2023-12-31 at 5.40.51 PM.png" alt="" class="m-1"/>
+                        </div> 
+
+                        <div class="boot-info m-3">
+                            <p class="boot-title">CircuitBoots</p>
+                            <p class="boot-price">$150.30</p>
+                            <p class="boot-description">
+                                CircuitBoots fuse cutting-edge innovation with rugged durability, 
+                                ensuring a seamless blend of style and functionality for the tech-savvy 
+                                adventurer.
+                            </p>
+                        </div>
+
                     </div>
+
+                    <div class="col-6 animal d-flex">
+
+                        <div class="image-container">
+                            <img src="/assets/nugget.jpg" alt="" class="m-1"/>
+                        </div>
+
+                        <div class="animal-info m-3">
+                            <p class="animal-name">Nugget</p>
+                            <p class="animal-age">3 years</p>
+                            <p class="animal-description">
+                                Nugget, the tiny dynamo of the coop, is a spirited chick with endless 
+                                energy and chirps of excitement. Her playful nature and adorable peeps 
+                                are sure to light up any home.
+                            </p>
+                        </div>
+
+                    </div>
+
                 </div>
 
-                <div class="animal d-flex">
-                    <div class="image-container">
-                        <img src="/assets/nugget.jpg" alt="" class=""/>
-                    </div>
-                    <div class="animal-info">
-                        <p class="animal-name">Nugget</p>
-                        <p class="animal-age">3 years</p>
-                        <p class="animal-description">
-                            Nugget, the tiny dynamo of the coop, is a spirited chick with endless 
-                            energy and chirps of excitement. Her playful nature and adorable peeps 
-                            are sure to light up any home.
-                        </p>
-                    </div>
-                </div>
             </div>
 
-            <button>Select Boot</button>
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#selectBoot">
+                Select Boot
+            </button>
             
         </div>
 
         <!--CodeClimbers-->
-        <div class="border code-climbers d-flex flex-column align-items-center">
+        <div class="border code-climbers d-flex flex-column align-items-center p-3 my-3">
 
-            <div class="product-container d-flex">
-                <div class="boot d-flex">
-                    <img src="/Screenshot 2023-12-31 at 5.40.51 PM.png" alt="" class="custom-img"/>
-                    <div class="boot-info">
-                        <p class="boot-title">CodeClimbers</p>
-                        <p class="boot-price">$150.30</p>
-                        <p class="boot-description">
-                            Ascend to new heights with CodeClimbers - these shoes are 
-                            engineered for the journey, providing stability and precision 
-                            in every step, ideal for those aiming for the top.
-                        </p>
-                    </div>
-                </div>
+            <div class="container">
 
-                <div class="animal d-flex">
-                    <div class="image-container">
-                        <img src="/assets/daisy.jpg" alt="" class=""/>
+                <div class="product-container d-flex row">
+
+                    <div class="col-6 boot d-flex">
+                        
+                        <div class="image-container">
+                            <img src="Screenshot 2023-12-31 at 5.40.51 PM.png" alt="" class="m-1"/>
+                        </div>  
+
+                        <div class="boot-info m-3">
+                            <p class="boot-title">CodeClimbers</p>
+                            <p class="boot-price">$150.30</p>
+                            <p class="boot-description">
+                                Ascend to new heights with CodeClimbers - these shoes are 
+                                engineered for the journey, providing stability and precision 
+                                in every step, ideal for those aiming for the top.
+                            </p>
+                        </div>
+
                     </div>
-                    <div class="animal-info">
-                        <p class="animal-name">Daisy</p>
-                        <p class="animal-age">7 months</p>
-                        <p class="animal-description">
-                            Daisy is a serene soul who loves leisurely walks and basking 
-                            in the sun. Her gentle demeanor and graceful strides make her 
-                            an ideal addition to any farm seeking a calm and affectionate 
-                            companion.
-                        </p>
+
+                    <div class="col-6 animal d-flex">
+
+                        <div class="image-container">
+                            <img src="/assets/daisy.jpg" alt="" class="m-1"/>
+                        </div>
+
+                        <div class="animal-info m-3">
+                            <p class="animal-name">Daisy</p>
+                            <p class="animal-age">7 months</p>
+                            <p class="animal-description">
+                                Daisy is a serene soul who loves leisurely walks and basking 
+                                in the sun. Her gentle demeanor and graceful strides make her 
+                                an ideal addition to any farm seeking a calm and affectionate 
+                                companion.
+                            </p>
+                        </div>
+
                     </div>
+
                 </div>
+                
             </div>
-
-            <button>Select Boot</button>
+            
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#selectBoot">
+                Select Boot
+            </button>
             
         </div>
 
         <!--ByteBounds-->
-        <div class="border byte-bounds d-flex flex-column align-items-center">
+        <div class="border byte-bounds d-flex flex-column align-items-center p-3 my-3">
 
-            <div class="product-container d-flex">
-                <div class="boot d-flex">
-                    <img src="/Screenshot 2023-12-31 at 5.40.51 PM.png" alt="" class="custom-img"/>
-                    <div class="boot-info">
-                        <p class="boot-title">ByteBounds</p>
-                        <p class="boot-price">$128.00</p>
-                        <p class="boot-description">
-                            ByteBounds redefine versatility, offering a perfect balance between 
-                            flexibility and strength, making each stride an effortless bound into 
-                            the future of footwear technology.
-                        </p>
+            <div class="container">
+
+                <div class="product-container d-flex row">
+
+                    <div class="col-6 boot d-flex">
+                        
+                        <div class="image-container">
+                            <img src="Screenshot 2023-12-31 at 5.40.51 PM.png" alt="" class="m-1"/>
+                        </div> 
+
+                        <div class="boot-info m-3">
+                            <p class="boot-title">ByteBounds</p>
+                            <p class="boot-price">$128.00</p>
+                            <p class="boot-description">
+                                ByteBounds redefine versatility, offering a perfect balance between 
+                                flexibility and strength, making each stride an effortless bound into 
+                                the future of footwear technology.
+                            </p>
+                        </div>
+
                     </div>
+
+                    <div class="col-6 animal d-flex">
+
+                        <div class="image-container">
+                            <img src="/assets/bessie.jpg" alt="" class="m-1"/>
+                        </div>
+
+                        <div class="animal-info m-3">
+                            <p class="animal-name">Bessie</p>
+                            <p class="animal-age">13 years, 7 months</p>
+                            <p class="animal-description">
+                                Bessie, the queen of the field, exudes elegance with every 
+                                step. Her wise eyes and patient nature make her an ideal 
+                                companion for a farm seeking a wise and nurturing presence.
+                            </p>
+                        </div>
+
+                    </div>
+
                 </div>
 
-                <div class="animal d-flex">
-                    <div class="image-container">
-                        <img src="/assets/bessie.jpg" alt="" class=""/>
-                    </div>
-                    <div class="animal-info">
-                        <p class="animal-name">Bessie</p>
-                        <p class="animal-age">13 years, 7 months</p>
-                        <p class="animal-description">
-                            Bessie, the queen of the field, exudes elegance with every 
-                            step. Her wise eyes and patient nature make her an ideal 
-                            companion for a farm seeking a wise and nurturing presence.
-                        </p>
-                    </div>
-                </div>
             </div>
 
-            <button>Select Boot</button>
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#selectBoot">
+                Select Boot
+            </button>
             
         </div>
 
     </div>
 
     <!--Shoe Size Modal-->
+    <div class="modal fade" id="selectBoot" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Select Boot Size</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+
+                <div class="modal-body">
+                
+                    <div class="container d-flex justify-content-between">
+
+                        <div class="border women-size me-3">
+                            <h4 style="text-align: center;">Women's Sizes</h4>
+
+                            <div class="women-size-list d-flex">
+
+                                <form action="" class="d-flex">
+
+                                    <div class="d-flex flex-column mx-2">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="womenSizes" id="size5">
+                                            <label for="size5" class="form-check-label">5</label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="womenSizes" id="size5.5">
+                                            <label for="size5.5" class="form-check-label">5.5</label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="womenSizes" id="size6">
+                                            <label for="size6" class="form-check-label">6</label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="womenSizes" id="size6.5">
+                                            <label for="size6.5" class="form-check-label">6.5</label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="womenSizes" id="size7">
+                                            <label for="size7" class="form-check-label">7</label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="womenSizes" id="size7.5">
+                                            <label for="size7.5" class="form-check-label">7.5</label>
+                                        </div>
+                                    </div>
+
+                                
+                                    <div class="d-flex flex-column mx-2">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="womenSizes" id="size8">
+                                            <label for="size8" class="form-check-label">8</label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="womenSizes" id="size8.5">
+                                            <label for="size8.5" class="form-check-label">8.5</label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="womenSizes" id="size9">
+                                            <label for="size9" class="form-check-label">9</label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="womenSizes" id="size9.5">
+                                            <label for="size9.5" class="form-check-label">9.5</label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="womenSizes" id="size10">
+                                            <label for="size10" class="form-check-label">10</label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="womenSizes" id="size10.5">
+                                            <label for="size10.5" class="form-check-label">10.5</label>
+                                        </div>
+                                    </div>
+
+                                    <div class="d-flex flex-column mx-2">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="womenSizes" id="size11">
+                                            <label for="size11" class="form-check-label">11</label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="womenSizes" id="size11.5">
+                                            <label for="size11.5" class="form-check-label">11.5</label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="womenSizes" id="size12">
+                                            <label for="size12" class="form-check-label">12</label>
+                                        </div>
+
+                                    </div>
+
+                                </form>
+
+                            </div>
+
+                        </div>
+        
+                        <div class="border men-size">
+                            <h4 style="text-align: center;">Men's Sizes</h4>
+
+                            <div class="men-size-list d-flex">
+
+                                <form action="" class="d-flex">
+
+                                    <div class="d-flex flex-column mx-2">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="menSizes" id="menSize6">
+                                            <label for="menSize6" class="form-check-label">6</label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="menSizes" id="menSize6.5">
+                                            <label for="menSize6.5" class="form-check-label">6.5</label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="menSizes" id="menSize7">
+                                            <label for="menSize7" class="form-check-label">7</label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="menSizes" id="menSize7.5">
+                                            <label for="menSize7.5" class="form-check-label">7.5</label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="menSizes" id="menSize8">
+                                            <label for="menSize8" class="form-check-label">8</label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="menSizes" id="menSize8.5">
+                                            <label for="menSize8.5" class="form-check-label">8.5</label>
+                                        </div>
+                                    </div>
+
+                                
+                                    <div class="d-flex flex-column mx-2">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="menSizes" id="menSize9">
+                                            <label for="menSize9" class="form-check-label">9</label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="menSizes" id="menSize9.5">
+                                            <label for="menSize9.5" class="form-check-label">9.5</label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="menSizes" id="menSize10">
+                                            <label for="menSize10" class="form-check-label">10</label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="menSizes" id="menSize10.5">
+                                            <label for="menSize10.5" class="form-check-label">10.5</label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="menSizes" id="menSize11">
+                                            <label for="menSize11" class="form-check-label">11</label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="menSizes" id="menSize11.5">
+                                            <label for="menSize11.5" class="form-check-label">11.5</label>
+                                        </div>
+                                    </div>
+
+                                    <div class="d-flex flex-column mx-2">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="menSizes" id="menSize12">
+                                            <label for="menSize12" class="form-check-label">12</label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="menSizes" id="menSize12.5">
+                                            <label for="menSize12.5" class="form-check-label">12.5</label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="menSizes" id="menSize13">
+                                            <label for="menSize13" class="form-check-label">13</label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="menSizes" id="menSize13.5">
+                                            <label for="menSize13.5" class="form-check-label">13.5</label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="menSizes" id="menSize14">
+                                            <label for="menSize14" class="form-check-label">14</label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="menSizes" id="menSize14.5">
+                                            <label for="menSize14.5" class="form-check-label">14.5</label>
+                                        </div>
+                                    </div>
+
+                                    <div class="d-flex flex-column mx-2">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="menSizes" id="menSize15">
+                                            <label for="menSize15" class="form-check-label">15</label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="menSizes" id="menSize15.5">
+                                            <label for="menSize15.5" class="form-check-label">15.5</label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="menSizes" id="menSize16">
+                                            <label for="menSize16" class="form-check-label">16</label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="menSizes" id="menSize16.5">
+                                            <label for="menSize16.5" class="form-check-label">16.5</label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="menSizes" id="menSize17">
+                                            <label for="menSize17" class="form-check-label">17</label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="menSizes" id="menSize18">
+                                            <label for="menSize18" class="form-check-label">18</label>
+                                        </div>
+
+                                    </div>
+                                
+                                </form>
+
+                            </div>
+                            
+                        </div>
+
+                    </div>
+                    
+                </div>
+
+                <div class="modal-footer d-flex justify-content-center">
+                    <button type="button" class="btn btn-primary">Add to Cart</button>
+                </div>
+
+            </div>
+        </div>
+      </div>
 
     </main>
 
