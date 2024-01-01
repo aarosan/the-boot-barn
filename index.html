@@ -17,21 +17,30 @@
         <!--Nav Bar-->
         <nav class="navbar navbar-light bg-light">
             <div class="container-fluid">
-            <a class="navbar-brand">theBootBarn</a>
-            <div class="d-flex">
-                <ul class="nav">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Menu</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="bi bi-person-circle"></i></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#offcanvasExample" data-bs-toggle="offcanvas" role="button" aria-controls="offcanvasExample"><i class="bi bi-cart4"></i>
-                        </a>
-                    </li>
-                </ul>
-            </div>
+                <a class="navbar-brand">theBootBarn</a>
+                <div class="d-flex">
+                    <ul class="nav">
+                        <li class="nav-item dropdown">
+                                <a class="nav-link active dropdown-toggle" role="button" href="#" data-bs-toggle="dropdown" aria-expanded="false" id="navbarDropdown">
+                                    Menu
+                                </a>
+                                <ul class="dropdown-menu custom-dropdown" aria-labelledby="navbarDropdown">
+                                    <li><a href="#" class="dropdown-item">Accessories</a></li>
+                                    <li><a href="#" class="dropdown-item">Boots</a></li>
+                                    <li><a href="#" class="dropdown-item">Shoes</a></li>
+                                    <li><a href="#" class="dropdown-item">Testimonials</a></li>
+                                    <li><a href="#" class="dropdown-item">Upcoming Events</a></li>
+                                </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="bi bi-person-circle"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#offcanvasExample" data-bs-toggle="offcanvas" role="button" aria-controls="offcanvasExample"><i class="bi bi-cart4"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </nav>
 
