@@ -5,3 +5,9 @@
 .carousel-inner {
     display: flex;
 }
+
+/*This .custom-img is in the testimonials.html*/
+.custom-img {
+    width: 200px;
+    height: auto;
+}
