@@ -2,6 +2,32 @@
     font-family: 'Josefin Slab', serif;
 }
 
+/*Initial Margin for formatting. NEED TO CHANGE LATER*/
+main {
+    margin: 0 223px 0 223px;
+}
+
+/*Initial Margin for formatting. NEED TO CHANGE LATER*/
+footer {
+    margin: 0 223px 0 223px;
+}
+
+footer i {
+    font-size: 25px;
+}
+
+.title {
+    height: 250px;
+}
+
+.login-icon {
+    font-size: 150px;
+}
+
+.modal-body button {
+    width: fit-content;
+}
+
 .carousel-inner {
     display: flex;
 }

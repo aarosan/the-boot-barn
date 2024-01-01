@@ -57,27 +57,31 @@
 
                 <!--Modal Body-->
                 <div class="modal-body d-flex flex-column">
-                    <i class="bi bi-person-circle"></i>  
+                    <i class="bi bi-person-circle text-center login-icon"></i>  
                     <p>Username</p>
-                    <input type="text" name="username" placeholder="Enter Username" id="">
+                    <input type="text" name="username" placeholder="Enter Username" id="" class="mb-3">
                     <p>Password</p>
-                    <input type="text" name="password" placeholder="Enter Password" id="">
-                    <button class="login">Login</button>
-                    <div class="d-flex justify-content-between">
-                        <div class="remember-me d-flex">
-                            <input type="checkbox" name="remember-me" id="">
-                            <p>Remember Me</p>
+                    <input type="text" name="password" placeholder="Enter Password" id="" class="mb-3">
+                    <div class="d-flex justify-content-center">
+                        <button class="login">Login</button>
+                    </div>
+                    
+                    <div class="d-flex justify-content-between mt-3">
+
+                        <div class="remember-me d-flex align-items-start">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="rememberMeCheckbox">
+                                <label for="rememberMeCheckbox" class="form-check-label">Remember Me</label>
+                            </div>
                         </div>
+
                         <div class="options d-flex flex-column">
                             <a href="">Create Account</a>
                             <a href="">Forgot username?</a>
                             <a href="">Forgot password?</a>
                         </div>
-                    </div>
-                </div>
 
-                <!--Modal Footer-->
-                <div class="modal-footer">
+                    </div>
                 </div>
               </div>
             </div>
@@ -86,7 +90,7 @@
         <!--Offcanvas Shopping Cart-->
         <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
             <div class="offcanvas-header">
-              <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
+              <h5 class="offcanvas-title" id="offcanvasExampleLabel">Shopping Cart</h5>
               <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
             </div>
             <div class="offcanvas-body">
@@ -110,13 +114,13 @@
 
     <main>
     <!--theBootBarn title-->
-    <div class="title border border-primary d-flex flex-column align-items-center justify-content-between">
+    <div class="title border border-primary d-flex flex-column align-items-center justify-content-between my-3 pt-3">
         <h1 class="main-header">theBootBarn</h1>
         <p class="tag">where soles find homes, and comfort finds you</p>
     </div>
 
     <!--Mission Statement-->
-    <div class="mission-statement border border-secondary d-flex flex-column align-items-center justify-content-between">
+    <div class="mission-statement border border-secondary d-flex flex-column align-items-center justify-content-between my-3 p-3">
         <h2 class="our-mission">~our mission~</h2>
         <p class="mission-statement">At theBootBarn, our mission is to curate an expansive collection of footwear that embodies quality, style, and versatility, ensuring that every style and design is available for both men and women. We aim to be the ultimate destination for footwear enthusiasts, offering an extensive array of boots, shoes, and accessories that cater to every lifestyle, purpose, and fashion preference regardless of gender.</br></br>
             
@@ -133,7 +137,7 @@
     </div>
 
     <!--Featured Boots-->
-    <div class="index-boots border border-success">
+    <div class="index-boots border border-success my-3 p-3">
 
         <div class="d-flex flex-column align-items-center justify-content-between">
             <h2 class="our-boots">Our Boots</h2>
@@ -203,7 +207,7 @@
     </div>
 
     <!--Featured Shoes-->
-    <div class="index-shoes border border-success">
+    <div class="index-shoes border border-success my-3 p-3">
 
         <div class="d-flex flex-column align-items-center justify-content-between">
             <h2 class="our-shoes">Our Shoes</h2>
@@ -273,7 +277,7 @@
     </div>
 
     <!--Testimonials-->
-    <div class="testimonials border border-warning d-flex flex-column align-items-center justify-content-between">
+    <div class="testimonials border border-warning d-flex flex-column align-items-center justify-content-between my-3 p-3">
         <h2 class="testimonials-title">Testimonials</h2>
 
         <div class="accordion" id="accordionExample">
@@ -317,10 +321,8 @@
 
     </div>
 
-    
-
     <!--How to Tie your Shoes-->
-    <div class="tie-shoes border border-info d-flex flex-column align-items-center justify-content-center">
+    <div class="tie-shoes border border-info d-flex flex-column align-items-center justify-content-center my-3 p-3">
         <h2 class="shoe-tie-title text-center">How to Tie your </br> new BootBarn Shoe</h2>
         <p>function tieShoes() {</br>    
             let leftShoelace = "left lace";</br>    
@@ -346,31 +348,34 @@
     </main>
 
     <!--Footer-->
-    <footer class="footer-info border border-dark">
+    <footer class="footer-info border border-dark py-3">
         
-        <div class="d-flex justify-content-between">
-            <div class="boot-barn-info">
-                <p class="boot-barn-footer">theBootBarn</p>
-                <div class="boot-barn-icons">
-                    <i class="boot-facebook bi bi-facebook"></i>
-                    <i class="boot-insta bi bi-instagram"></i>
-                    <i class="boot-twitter bi bi-twitter"></i>
-                    <i class="boot-linkedin bi bi-linkedin"></i>
-                </div>
-                <p class="boot-barn-street">1234 Boot Street</p>
-                <p class="boot-barn-town">Bootsville, Farm County</p>
-                <p class="boot-barn-state">Countryland, BL1 23T</p>
-            </div>
+        <div class="container">
 
-            <div class="binary-harvest-info">
-                <p class="binary-harvest-footer">Binary Harvest Ranch</p>
-                <div class="binary-harvest-icons">
-                    <i class="binary-facebook bi bi-facebook"></i>
-                    <i class="binary-insta bi bi-instagram"></i>
+            <div class="row">
+                <div class="col-6 pe-5 boot-barn-info d-flex flex-column align-items-end">
+                    <h2 class="boot-barn-footer m-0">theBootBarn</h2>
+                    <div class="boot-barn-icons m-0">
+                        <a href=""><i class="boot-facebook bi bi-facebook"></i></a>
+                        <a href=""><i class="boot-insta bi bi-instagram"></i></a>
+                        <a href=""><i class="boot-twitter bi bi-twitter"></i></a>
+                        <a href=""><i class="boot-linkedin bi bi-linkedin"></i></a>
+                    </div>
+                    <p class="boot-barn-street m-0">1234 Boot Street</p>
+                    <p class="boot-barn-town m-0">Bootsville, Farm County</p>
+                    <p class="boot-barn-state m-0">Countryland, BL1 23T</p>
                 </div>
-                <p class="binary-harvest-street">302 Harvest Ranch Road</p>
-                <p class="binary-harvest-town">Meadowville, County</p>
-                <p class="binary-harvest-state">Townsville, 01010</p>
+
+                <div class="col-6 ps-5 binary-harvest-info d-flex flex-column">
+                    <h2 class="binary-harvest-footer m-0">Binary Harvest Ranch</h2>
+                    <div class="binary-harvest-icons m-0">
+                        <a href=""><i class="binary-facebook bi bi-facebook"></i></a>
+                        <a href=""><i class="binary-insta bi bi-instagram"></i></a>
+                    </div>
+                    <p class="binary-harvest-street m-0">302 Harvest Ranch Road</p>
+                    <p class="binary-harvest-town m-0">Meadowville, County</p>
+                    <p class="binary-harvest-state m-0">Townsville, 01010</p>
+                </div>
             </div>
         </div>
 
