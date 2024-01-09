@@ -57,3 +57,72 @@ footer i {
     max-width: 100%;
 }
 
+.carousel-inner {
+    width: 100%;
+    height: 500px; /* Set a fixed height for the carousel */
+    overflow: hidden; /* Hide overflowing content */
+}
+
+.carousel-item {
+    transition: transform 1s ease; 
+    will-change: transform;
+}
+
+.carousel-boot-one {
+    position: relative;
+    top: -475px;
+}
+
+.carousel-boot-three {
+    position: relative;
+    top: -425px;
+}
+
+.carousel-boot-four {
+    position: relative;
+    top: -425px;
+}
+
+.carousel-boot-five {
+    position: relative;
+    top: -100px;
+}
+
+.carousel-shoe-one {
+    position: relative;
+    top: -100px;
+}
+
+.carousel-shoe-two {
+    position: relative;
+    top: -300px;
+}
+
+.carousel-shoe-three {
+    position: relative;
+    top: -300px;
+}
+
+.carousel-shoe-four {
+    position: relative;
+    top: -300px;
+}
+
+.carousel-shoe-five {
+    position: relative;
+    top: -100px;
+}
+
+.carousel-item .custom-bg {
+    background-color: rgba(2, 36, 61, .7)
+}
+
+.custom-bg {
+    width: 100%;
+    left: 0;
+}
+
+.carousel-caption a {
+    text-decoration: none;
+    color: white;
+}
