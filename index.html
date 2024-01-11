@@ -122,18 +122,21 @@
     <!--Mission Statement-->
     <div class="mission-statement border border-secondary d-flex flex-column align-items-center justify-content-between my-3 p-3">
         <h2 class="our-mission">~our mission~</h2>
-        <p class="mission-statement">At theBootBarn, our mission is to curate an expansive collection of footwear that embodies quality, style, and versatility, ensuring that every style and design is available for both men and women. We aim to be the ultimate destination for footwear enthusiasts, offering an extensive array of boots, shoes, and accessories that cater to every lifestyle, purpose, and fashion preference regardless of gender.</br></br>
+        </br>
+
+        <p class="mission-statement">At theBootBarn, our mission is to curate an expansive collection of footwear that embodies quality, style, and versatility, ensuring that every style and design is available for both men and women. We aim to be the ultimate destination for footwear enthusiasts, offering an extensive array of boots, shoes, and accessories that cater to every lifestyle, purpose, and fashion preference regardless of gender.</p>
+        
             
-            With a commitment to exceptional craftsmanship and enduring comfort, we strive to empower all our customers by providing not just footwear, but a tailored experience that resonates with their individuality, regardless of gender. Stepping into theBootBarn means stepping into a world of possibilities, where every step taken reflects reliability, style, and personal expression, ensuring an inclusive and diverse offering for all.</br></br>
-            
-            Additionally, we take pride in being a leather-free establishment. Our commitment extends beyond fashion; we proudly craft our footwear without any animal hide, ensuring ethical and sustainable alternatives without compromising on quality or style.</br></br>
-            
-            Our mission goes beyond simply selling soles; it's about saving souls. For every 'sole' sold, we pledge to rescue and rehabilitate barnyard animals in need, offering them a sanctuary filled with love and care. We are proud to introduce our partnership with “Binary Harvest Ranch.”</br></br>
-            
-            With each shoe purchase, our customers become partners in this noble cause. They don't just buy footwear; they become a part of a compassionate movement that extends beyond fashion and comfort. We believe in the power of community and the impact of collective efforts. Through our platform, customers contribute to something greater, ensuring that every 'sole' sold directly contributes to saving a barnyard animal's soul.</br></br>
-            
-            Together, we're not just providing quality footwear; we're fostering hope, compassion, and a brighter future for these beloved creatures. Join us in our mission to make a tangible difference—one 'sole' at a time.
-        </p>
+        <p class="mission-statement">With a commitment to exceptional craftsmanship and enduring comfort, we strive to empower all our customers by providing not just footwear, but a tailored experience that resonates with their individuality, regardless of gender. Stepping into theBootBarn means stepping into a world of possibilities, where every step taken reflects reliability, style, and personal expression, ensuring an inclusive and diverse offering for all.</p>
+                      
+        <p class="mission-statement">Additionally, we take pride in being a leather-free establishment. Our commitment extends beyond fashion; we proudly craft our footwear without any animal hide, ensuring ethical and sustainable alternatives without compromising on quality or style.</p>
+         
+        <p class="mission-statement">Our mission goes beyond simply selling soles; it's about saving souls. For every 'sole' sold, we pledge to rescue and rehabilitate barnyard animals in need, offering them a sanctuary filled with love and care. We are proud to introduce our partnership with “Binary Harvest Ranch.”</p>
+
+        <p class="mission-statement">With each shoe purchase, our customers become partners in this noble cause. They don't just buy footwear; they become a part of a compassionate movement that extends beyond fashion and comfort. We believe in the power of community and the impact of collective efforts. Through our platform, customers contribute to something greater, ensuring that every 'sole' sold directly contributes to saving a barnyard animal's soul.</p>
+
+        <p class="mission-statement">Together, we're not just providing quality footwear; we're fostering hope, compassion, and a brighter future for these beloved creatures. Join us in our mission to make a tangible difference—one 'sole' at a time.</p>
+
     </div>
 
     <!--Featured Boots-->
@@ -334,9 +337,39 @@
 
     <!--How to Tie your Shoes-->
     <div class="tie-shoes border border-info d-flex flex-column align-items-center justify-content-center my-3 p-3">
-        <h2 class="shoe-tie-title text-center">How to Tie your </br> new BootBarn Shoe</h2>
-        <p>function tieShoes() {</br>    
-            let leftShoelace = "left lace";</br>    
+        <h2 class="shoe-tie-title text-center">
+          How to Tie your </br> new BootBarn Shoe
+        </h2>
+
+        <pre class="code">
+          <code>
+      function tieShoes() {
+          let leftShoelace = "left lace";
+          let rightShoelace = "right lace";
+      
+          for (let i = 0; i <= 4; i++) {
+              if (i === 0) {
+                  console.log(`Step ${i}: Cross ${leftShoelace} over ${rightShoelace}`);
+              } else if (i === 1) {
+                  console.log(`Step ${i}: Loop ${rightShoelace} under and through`);
+              } else if (i === 2) {
+                  console.log(`Step ${i}: Create a bunny ear with ${leftShoelace}`);
+              } else if (i === 3) {
+                  console.log(`Step ${i}: Wrap ${rightShoelace} around the bunny ear`);
+              } else if (i === 4) {
+                  console.log(`Step ${i}: Pull both laces to tighten the knot`);
+              }
+          }
+      
+          return "Shoelaces successfully tied!";
+      }
+      
+      console.log(tieShoes());
+          </code>
+        </pre>
+
+        <!-- <p>function tieShoes() {</br>    
+            let leftShoelace = "left lace"; </br>    
             let rightShoelace = "right lace";</br></br>    
             for (let i = 0; i <= 4; i++) {</br>        
                 if (i === 0) {</br>            
@@ -353,7 +386,7 @@
         }</br></br>    
         return "Shoelaces successfully tied!";</br>
     }</br></br>
-    console.log(tieShoes());</p>
+    console.log(tieShoes());</p> -->
     </div>
 
     </main>
