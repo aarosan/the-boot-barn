@@ -145,3 +145,8 @@ code {
     display: block;
     white-space: pre-wrap;
 }
+
+.boot-statement {
+    text-indent: 20px;
+}
+
